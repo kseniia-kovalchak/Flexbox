@@ -1,0 +1,248 @@
+body {
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
+  font-size: 18px;
+  background-color: #f4f4f4;
+}
+header,
+section,
+footer {
+  margin: 35px 0px;
+}
+.wrapper {
+  width: 1200px;
+  margin: 0 auto;
+}
+.header__container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+}
+.header__block {
+  position: relative;
+  box-sizing: border-box;
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px;
+}
+.header__block-colored {
+  background-color: #76cdd8;
+}
+.header__block-backgrounded {
+  background-image: url(../img/image-01.jpg);
+  background-position: center;
+}
+.header__round-image {
+  border-radius: 200px;
+  width: 200px;
+  height: 200px;
+  background-image: url(../img/image-04.jpg);
+  background-position: 60%;
+  background-size: cover;
+}
+.header__title {
+  color: white;
+  font-size: 3em;
+}
+.header__text,
+.main__text {
+  font-size: 1em;
+  font-weight: 300;
+  color: #6e6e6e;
+}
+.header__text_italic {
+  line-height: 2em;
+  letter-spacing: 2px;
+  font-style: italic;
+}
+.header__subtitile,
+.main__title {
+  color: #76cdd8;
+}
+.button {
+  background-color: #019999;
+  color: white;
+  text-transform: uppercase;
+  padding: 15px 50px;
+  box-sizing: border-box;
+  align-self: flex-end;
+  border: none;
+}
+.header__text_white {
+  color: white;
+  font-size: small;
+}
+.main__container {
+  display: flex;
+  background-color: white;
+}
+.main__block {
+  width: 800px;
+  box-sizing: border-box;
+  padding: 60px;
+  flex-direction: column;
+  display: flex;
+}
+.main__image {
+  width: 400px;
+}
+.plans {
+  display: flex;
+  background-color: white;
+  gap: 40px;
+  align-items: center;
+}
+.plans__image {
+  width: 400px;
+  height: 600px;
+}
+.plans__plan {
+  box-sizing: border-box;
+  border: 1px solid #019999;
+  width: 340px;
+  height: 540px;
+}
+.plans__title {
+  background-color: #019999;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+.plans__title > h3 {
+  margin: 0;
+}
+.plans__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 540px;
+}
+.plans__button {
+  align-self: center;
+  margin: 30px;
+}
+.plans__group {
+  align-self: center;
+}
+.footer__head {
+  background-color: #23d4d4;
+  height: 150px;
+}
+.footer__title {
+  width: 80%;
+  margin: 0 auto;
+  padding-top: 30px;
+  color: white;
+}
+.footer__input,
+.footer__select {
+  width: 340px;
+  height: 50px;
+  box-sizing: border-box;
+  margin-top: 20px;
+}
+.footer__input::placeholder,
+.footer__select,
+.footer__textarea,
+.footer__textarea {
+  font-size: 19px;
+  color: #6e6e6e;
+  padding: 10px;
+}
+.footer__inputs-group {
+  display: flex;
+  flex-direction: column;
+}
+.footer__form {
+  background-color: white;
+  width: 80%;
+  margin: -50px auto;
+  padding: 60px;
+  box-sizing: border-box;
+  height: 500px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  position: relative;
+  z-index: 100;
+}
+.footer__textarea {
+  width: 340px;
+  height: 200px;
+}
+.footer__bottom {
+  background-color: #019999;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  font-size: small;
+  height: 270px;
+  align-items: center;
+}
+.footer__text {
+  margin: 5px;
+}
+.copyright {
+  text-align: center;
+}
+.header__block__hover_triangle:hover::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 0;
+  border: 40px solid transparent;
+  border-top: 40px solid #76cdd8;
+  border-right: 40px solid #76cdd8;
+  color: #76cdd8;
+}
+.header__block__hover_triangle:hover .button {
+  background-color: rgb(118, 205, 216);
+}
+.header__block__scaled:hover,
+.main__image:hover,
+.plans__image:hover {
+  transform: scale(1.1);
+}
+.main__button__hover:hover {
+  background-color: rgb(118, 205, 216);
+}
+.plans__plan:hover {
+  box-shadow: 0 0 0 0.2rem #24d4d4;
+}
+.plans__plan:hover button {
+  background: #24d4d4;
+}
+.plans__plan__special {
+  position: relative;
+}
+.plans__plan__special:hover {
+  height: 600px;
+}
+.plans__plan__special:hover::before {
+  content: "*";
+  position: absolute;
+  color: red;
+  left: 50px;
+  bottom: 40px;
+}
+.plans__plan__special:hover::after {
+  position: absolute;
+  content: "Special discount";
+  color: #23d4d4;
+  left: 65px;
+  bottom: 40px;
+}
+.footer__input:focus,
+.footer__select:focus,
+.footer__textarea:focus {
+  border-color: #24d4d4;
+  box-shadow: 0 0 0 0.2rem #24d4d4;
+}
